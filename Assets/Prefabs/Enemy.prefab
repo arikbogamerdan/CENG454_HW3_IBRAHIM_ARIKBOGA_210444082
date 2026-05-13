@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4715788450184921033}
   - component: {fileID: 6609160196599899038}
   - component: {fileID: 6622489022399440534}
+  - component: {fileID: 6890156185890062618}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -185,3 +186,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CoreBreach.Enemies.EnemyMovement
   target: {fileID: 0}
   defaultSpeed: 2
+--- !u!114 &6890156185890062618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449382308042538251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d830f49331984271a81717088ef8fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoreBreach.Enemies.EnemyCoreCollider
+  contactDamage: 10
