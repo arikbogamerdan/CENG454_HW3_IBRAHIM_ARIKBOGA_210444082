@@ -16,7 +16,6 @@ namespace CoreBreach.Waves
         public event Action<int> OnWaveStarted;
         public event Action<int> OnWaveCompleted;
         public event Action       OnAllWavesCompleted;
-
         public int CurrentWaveIndex { get; private set; } = -1;
         public int TotalWaves => waves != null ? waves.Length : 0;
 
@@ -104,6 +103,8 @@ namespace CoreBreach.Waves
         {
             switch (spec.movementKind)
             {
+                case MovementKind.ZigZag:
+                    return new ZigZagCoreChaseStrategy(spec.movementSpeed);
                 case MovementKind.Direct:
                 default:
                     return new DirectCoreChaseStrategy(spec.movementSpeed);
